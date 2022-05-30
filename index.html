@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>the all new nhentai generator</title>
+    <script>
+        let base_url = `https://nhentai.net/g/`;
+
+        const ids = {
+            1: '',
+            2: '',
+            3: '',
+            4: '',
+            5: '',
+        };
+
+        for (let i in ids) {
+            ids[i] = Math.floor(Math.random() * 10);
+            base_url = `${base_url}${ids[i]}`;
+        }
+
+        window.location.href = `${base_url}`;
+    </script>
+</head>
